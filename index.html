@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veloura — Luxury Korean Jewelry</title>
+  <meta name="description" content="Veloura: Premium Korean-style necklace, earrings, and nose pin. Smooth 3D showcase with secure checkout via bKash, Nagad, DBBL Rocket, Visa/Mastercard." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <!-- 3D web component (model-viewer) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo">Veloura</span>
+      </div>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#payments">Payment</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Luxury Korean Jewelry</h1>
+          <p>
+            নেকলেস, ইয়াররিংস ও নোজ পিন— সবকিছুই প্রিমিয়াম রোজ গোল্ড ফিনিশে।
+            3D ভিউতে ঘুরিয়ে দেখুন, পছন্দ করুন, আরামসে পেমেন্ট করুন bKash, Nagad, Rocket, কিংবা Card দিয়ে।
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#collections">Shop New Arrivals</a>
+            <a class="btn ghost" href="#viewer">3D View</a>
+          </div>
+          <div class="trust">
+            <span>Fast Delivery</span><span>Secure Payment</span><span>7-Day Return</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="viewer-tabs">
+            <button class="tab active" data-target="necklace" aria-label="Show Necklace 3D model" aria-pressed="true">Necklace</button>
+            <button class="tab" data-target="earrings" aria-label="Show Earrings 3D model" aria-pressed="false">Earrings</button>
+            <button class="tab" data-target="nosepin" aria-label="Show Nose Pin 3D model" aria-pressed="false">Nose Pin</button>
+          </div>
+          <div id="viewer" class="viewer-wrap" role="log" aria-live="polite">
+            <model-viewer id="mv-necklace"
+              src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+              poster="https://placehold.co/600x600/181818/e9b5a6?text=Necklace"
+              autoplay
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              auto-rotate
+              rotation-per-second="30deg"
+              exposure="1"
+              alt="Veloura rose gold necklace 3D">
+            </model-viewer>
+
+            <model-viewer id="mv-earrings" class="hidden"
+              src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+              poster="https://placehold.co/600x600/181818/e9b5a6?text=Earrings"
+              autoplay
+              camera-controls
+              auto-rotate
+              rotation-per-second="30deg"
+              exposure="1"
+              alt="Veloura rose gold earrings 3D">
+            </model-viewer>
+
+            <model-viewer id="mv-nosepin" class="hidden"
+              src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+              poster="https://placehold.co/600x600/181818/e9b5a6?text=Nose+Pin"
+              autoplay
+              camera-controls
+              auto-rotate
+              rotation-per-second="30deg"
+              exposure="1"
+              alt="Veloura rose gold nose pin 3D">
+            </model-viewer>
+          </div>
+          <p class="poster-note">ℹ️ Tip: Replace <strong>.glb</strong> files with your actual 3D models.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="collections">
+      <div class="container">
+        <h2>Featured Collections</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card-image-wrap">
+                <img src="https://placehold.co/600x600/181818/e9b5a6?text=Royal+Necklace" alt="A beautiful Korean-style rose gold necklace.">
+            </div>
+            <div class="card-body">
+              <h3>Royal Necklace</h3>
+              <p>রোজ গোল্ড প্লেটিং, AAA কিউবিক জিরকোনিয়া স্টোন, এলার্জি-সেইফ।</p>
+              <div class="price-row">
+                <span class="price">৳ 4,990</span>
+                <button class="btn small primary">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+             <div class="card-image-wrap">
+                <img src="https://placehold.co/600x600/181818/e9b5a6?text=Bloom+Earrings" alt="A pair of minimalist bloom-style Korean earrings.">
+            </div>
+            <div class="card-body">
+              <h3>Bloom Earrings</h3>
+              <p>মিনিমাল কোরিয়ান স্টাইল, লাইটওয়েট, ডেইলি ওয়্যারের জন্য পারফেক্ট।</p>
+              <div class="price-row">
+                <span class="price">৳ 1,990</span>
+                <button class="btn small primary">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+             <div class="card-image-wrap">
+                <img src="https://placehold.co/600x600/181818/e9b5a6?text=Glow+Nose+Pin" alt="A delicate and glowing rose gold nose pin.">
+            </div>
+            <div class="card-body">
+              <h3>Glow Nose Pin</h3>
+              <p>হাই-পলিশ ফিনিশ, স্কিন-ফ্রেন্ডলি মেটেরিয়াল, প্রিমিয়াম লুক।</p>
+              <div class="price-row">
+                <span class="price">৳ 790</span>
+                <button class="btn small primary">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="payments" class="payments">
+      <div class="container">
+        <h2>Payment Options</h2>
+        <p class="muted">Pay with bKash, Nagad, DBBL Rocket, Visa, or Mastercard.</p>
+        <div class="pay-icons">
+           <div class="icon-wrap">
+            <img src="https://i.ibb.co/6gBf1P9/bkash.png" alt="bKash" />
+            <small>bKash</small>
+          </div>
+          <div class="icon-wrap">
+            <img src="https://i.ibb.co/P9fR4dc/nagad.png" alt="Nagad" />
+            <small>Nagad</small>
+          </div>
+          <div class="icon-wrap">
+            <img src="https://i.ibb.co/mS2y2x4/rocket.png" alt="Rocket" />
+            <small>Rocket</small>
+          </div>
+          <div class="icon-wrap">
+            <img src="https://i.ibb.co/Wc4kS2j/visa.png" alt="Visa" />
+            <small>Visa</small>
+          </div>
+          <div class="icon-wrap">
+            <img src="https://i.ibb.co/vVRNbfL/mastercard.png" alt="Mastercard" />
+            <small>Mastercard</small>
+          </div>
+        </div>
+        <div class="note">
+          Integration via SSLCommerz, ShurjoPay, or direct SDKs.
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <h2>About Veloura</h2>
+            <p>Veloura কোরিয়ান জুয়েলারির প্রিমিয়াম কালেকশন নিয়ে আসছে—
+            যেখানে ফিনিশ, ফিট আর ফ্যাশন—সবাইকে একসাথে বিবেচনা করা হয়।
+            প্রতিটি পণ্য কেয়ারফুলি কিউরেটেড ও কোয়ালিটি-চেকড।</p>
+            <ul class="bullets">
+              <li>Hypoallergenic, Nickel-safe</li>
+              <li>Water & Sweat Resistant Coating</li>
+              <li>Gift-ready Packaging</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>Our Promise</h3>
+            <p>7-Day Easy Return</p>
+            <p>180-Day Color Warranty</p>
+            <p>24/7 Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! We will get back to you.');">
+          <input type="text" placeholder="আপনার নাম" required aria-label="Your Name">
+          <input type="email" placeholder="ইমেইল" required aria-label="Your Email">
+          <textarea rows="4" placeholder="মেসেজ" aria-label="Your Message"></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand-mini">Veloura</div>
+      <div class="foot-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Return Policy</a>
+      </div>
+      <div class="copy">© <span id="year"></span> Veloura. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
